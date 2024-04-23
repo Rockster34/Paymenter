@@ -18,7 +18,7 @@ class CPanel extends Server
     {
         return [
             'display_name' => 'CPanel',
-            'version' => '1.0.0',
+            'version' => '1.0.1',
             'author' => 'Paymenter',
             'website' => 'https://paymenter.org',
         ];
@@ -51,6 +51,13 @@ class CPanel extends Server
                 'friendlyName' => 'Hostname',
                 'validation' => 'url:http,https',
                 'required' => true,
+            ],
+            [
+                'name' => 'hostaccess',
+                'type' => 'text',
+                'friendlyName' => 'Access for users hostname',
+                'validation' => 'url:http,https',
+                'required' => false,
             ],
             [
                 'name' => 'username',
